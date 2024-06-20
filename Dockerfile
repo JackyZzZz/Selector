@@ -19,6 +19,7 @@ RUN pip install --upgrade pip setuptools wheel
 # Install the dependencies using --use-pep517
 RUN pip install --use-pep517 --no-cache-dir -r requirements.txt
 RUN pip install --use-pep517 --no-cache-dir -r requirements_dev.txt
+RUN pip install --use-pep517 --no-cache-dir streamlit
 
 # Copy the rest of the application code
 COPY . .
