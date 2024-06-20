@@ -11,7 +11,7 @@ COPY requirements_dev.txt requirements_dev.txt
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir -r requirements_dev.txt
-
+RUN pip install --no-cache-dir streamlit
 # Copy the rest of the application code
 COPY . .
 
